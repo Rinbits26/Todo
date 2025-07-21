@@ -98,64 +98,69 @@ h1{
     .container-todo {
         width: 95%;
         padding: 10px;
+        box-sizing: border-box;
     }
 
-    
     .input {
-        width: 100%; 
+        width: 100%;
         font-size: 14px;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        display: block;
     }
 
-    .btnAdd { 
-        width: 100%; 
-        margin-top: 5px; 
-        margin-bottom: 15px; 
+    .btnAdd {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        padding: 10px 0;
+        box-sizing: border-box;
+        display: block;
     }
 
-    .btn { 
-        padding: 6px 10px; 
+    .btn {
+        padding: 6px 10px;
         font-size: 13px;
         margin: 2px;
     }
 
-
     .task {
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px; 
-        padding: 10px 0;
+        gap: 10px;
+        padding: 12px 0;
         border-bottom: 1px solid #eee;
     }
 
     .left-div {
         width: 100%;
-        display: flex; 
-        align-items: center; 
-        gap: 10px;
-        min-width: 0; 
-    }
-
-    .right-div {
-        width: 100%;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
-        gap: 5px; 
+        gap: 10px;
+        min-width: 0;
     }
 
     .taskname {
-        font-size: 1em; 
-        flex-grow: 1; 
-        word-break: break-word; 
+        font-size: 1.1em;
+        flex-grow: 1;
+        word-break: break-word;
         overflow-wrap: break-word;
         margin-right: 10px;
     }
 
     .checkbox {
-        width: 18px;
-        height: 18px; 
-        flex-shrink: 0; 
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    .right-div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
     }
 }
 
