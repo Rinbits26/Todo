@@ -65,3 +65,76 @@ h1{
     cursor: pointer;
 }
 
+
+/* --- Media Queries --- */
+
+@media (max-width: 768px) {
+    .container-todo {
+        width: 90%; 
+        padding: 15px;
+    }
+
+    .input {
+        width: 75%; 
+    }
+
+    .btn {
+        padding: 8px 15px; 
+        font-size: 16px;
+    }
+
+    .taskname {
+        font-size: 1.3em; 
+    }
+
+    .checkbox {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container-todo {
+        width: 95%; 
+        padding: 10px;
+    }
+
+    .input {
+        width: 70%; 
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .task {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 5px;
+    }
+
+    .left-div, .right-div {
+        width: 100%; 
+        justify-content: space-between; 
+    }
+
+    .taskname {
+        font-size: 1.1em; 
+        word-break: break-word;
+    }
+
+    .checkbox {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container-todo {
+        width: 650px; 
+    }
+}
