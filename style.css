@@ -100,46 +100,61 @@ h1{
         padding: 10px;
     }
 
+    
     .input {
-        width: 100%;
+        width: 100%; 
         font-size: 14px;
         margin-bottom: 10px; 
     }
 
-    .btn {
-        padding: 6px 10px;
-        font-size: 13px; 
+    .btnAdd { 
+        width: 100%; 
+        margin-top: 5px; 
+        margin-bottom: 15px; 
+    }
+
+    .btn { 
+        padding: 6px 10px; 
+        font-size: 13px;
         margin: 2px;
     }
 
-    .addBtn { 
-        width: 100%; 
-        margin-top: 10px;
-    }
 
     .task {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column;
+        align-items: flex-start;
         gap: 8px; 
-        padding: 10px 0; 
-        border-bottom: 1px solid #eee; 
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
     }
 
-    .left-div, .right-div {
+    .left-div {
         width: 100%;
-        justify-content: space-between; 
+        display: flex; 
+        align-items: center; 
+        gap: 10px;
+        min-width: 0; 
+    }
+
+    .right-div {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px; 
     }
 
     .taskname {
-        font-size: 1em;
+        font-size: 1em; 
+        flex-grow: 1; 
         word-break: break-word; 
-        flex-grow: 1;
-        margin-right: 10px; 
+        overflow-wrap: break-word;
+        margin-right: 10px;
     }
 
     .checkbox {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px; 
         flex-shrink: 0; 
     }
 }
